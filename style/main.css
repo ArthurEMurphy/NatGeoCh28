@@ -6,13 +6,24 @@ body{
     font-family:'roboto','sans-serif';
     background-color: black;
 }
+
 p{
-    line-height: 2;
+    line-height: 1.2;
 }
 img{
     max-width: 100%;
 }
 a{text-decoration: none;
+}
+h3{
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: white;
+}
+h3:hover{
+    text-decoration: underline;
+    cursor:pointer;
 }
 
 /*utilities*/
@@ -20,6 +31,12 @@ p.read-btn{
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
+    
+}
+.container{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
 }
 /*nav*/
 .navigation-bar{
@@ -29,12 +46,7 @@ p.read-btn{
     height: 50px;
     background-color: white;
 }
-.menu{
-    flex-basis: 250px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 .ng-logo,.link-search,.link-renew,.link-menu{
     display: none;
 }
@@ -123,3 +135,81 @@ h1{
   border-color: black;
   border-style: dotted;
 } */
+
+/*main-news*/
+.main-news{
+    position: relative; /*the parent should be relative*/
+    margin-bottom:  20px;
+}
+.main-news-img{
+    height: 400px;
+}
+.main-news-img img{
+    height: 100%;
+}
+.main-news-text{
+    position: absolute; /*the child should be absolute*/
+    top: 120px;
+    left: 20px;
+}
+.main-news-text p.title{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+
+}
+.main-news-text p.read-btn{
+    color: white;
+}
+
+/*secondary-news*/
+
+.secondary-news{
+    margin-bottom: 20px;
+    
+}
+.secondary-news-img{
+
+}
+.secondary-news-text{
+    background-color: white;
+    padding: 10px;
+    margin-top: -5px;
+
+}
+.secondary-news-text h3{
+    color: gray;
+    padding-bottom: 0;
+}
+.secondary-news-text h3 span{
+    font-weight: 300;
+}
+.secondary-news-text p.title{
+    font-size: 24px;
+    font-weight: 700;
+
+}
+.secondary-news-text p.read-btn{
+    color: black;
+}
+
+/*todays picks*/
+.pick-item{
+    display:grid;
+    grid-template-columns: 100px 300px;
+    margin-bottom: 20px;
+    column-gap: 30px;
+}
+.pick-item img{
+    width: 100px;
+    height: 100px;
+}
+.picks-text p{
+    color: white;
+    font-weight: 700;
+    line-height: 1.5px;
+}
+.picks-text p:hover{
+    text-decoration: underline;
+}
