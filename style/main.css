@@ -52,23 +52,32 @@ p.read-btn{
     
 }
 .link-subs{
-    background-color: black;
-    text-transform: uppercase;
-    font-size: 13px;
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    background-image: linear-gradient(to left, black 50%, var(--primary) 50%);
+    transition: background-position .2s ease-in-out, color .2s ease-in-out;
     color:white;
-    font-weight: 700;
-    letter-spacing: 3px;
-    padding: 15px;
+    padding:1rem;
 }
 .link-subs:hover{
-    color: black;
-    background-color: var(--primary);
+    background-position: 0% 0;
+    color:black;
 }
 .link-arrows i{
     color: black;
     margin-right: 20px;
 }
-
+.sub-word{
+    border-bottom:2px solid var(--primary);
+    background-size: 100% 200%;
+    background-image:linear-gradient(to bottom, black 50%, var(--primary) 50%);
+    transition: background-position .1s ease-in-out, color .1s ease-in-out;
+}
+.sub-word:hover{
+    background-position: 0 100%;
+    color:black;
+    cursor:pointer;
+}
 
 /*header*/
 header{
@@ -97,10 +106,20 @@ h1{
     text-align: center;
 }
 .subs-word{
-    border-bottom: 2px solid #ffcc00;
-    width: 4px;
+    border-bottom:2px solid var(--primary);
+    background-size: 100% 200%;
+    background-image:linear-gradient(to bottom, black 50%, var(--primary) 50%);
+    transition: background-position .1s ease-in-out, color .1s ease-in-out;
 }
 .subs-word:hover{
-    color: black;
-    background-color: var(--primary);
+    background-position: 0 100%;
+    color:black;
+    cursor:pointer;
 }
+
+/* .subs-word:hover::before{
+    content: "This is a fancy orange box.";
+  background-color: #FFBA10;
+  border-color: black;
+  border-style: dotted;
+} */
