@@ -38,6 +38,15 @@ p.read-btn{
     margin-right: auto;
     margin-left: auto;
 }
+@media(min-width:768px){
+    .container{
+        width: 75%;
+    }
+    .flex-container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
 /*nav*/
 .navigation-bar{
     display: flex;
@@ -46,7 +55,9 @@ p.read-btn{
     height: 50px;
     background-color: white;
 }
+.menu{
 
+}
 .ng-logo,.link-search,.link-renew,.link-menu{
     display: none;
 }
@@ -91,6 +102,47 @@ p.read-btn{
     cursor:pointer;
 }
 
+@media(min-width:768px){
+    .menu{
+        flex-basis: 450px;
+    }
+    .ng-logo,.link-search,.link-renew,.link-menu{
+        display: block;
+    }
+    .ng-logo-border{
+        display: none;
+    }
+    .ng-logo{
+        width: 110px;
+        margin-left: 20px;
+    }
+    .link-search{
+        color: black;
+    }
+    .link-renew{
+        color: black;
+        font-weight: normal;
+        text-transform: capitalize;
+        border-bottom: 2px solid var(--primary);
+        background-size: 100% 200%;
+        background-image: linear-gradient(to bottom, #fff 50%, var(--primary) 50%);
+        transition: background-position .2s ease-in-out, color .2s ease-in-out;
+    }
+    .link-renew:hover{
+        background-position: 0 100%;
+        color: black;
+        cursor: pointer;
+    }
+    .link-menu{
+        text-transform: uppercase;
+        font-size: 15px;
+        color: black;
+        font-weight: 700;
+        letter-spacing: 3px;
+    }
+
+}
+
 /*header*/
 header{
     color: white;
@@ -127,6 +179,12 @@ h1{
     background-position: 0 100%;
     color:black;
     cursor:pointer;
+}
+
+
+
+@media(min-width:768px){
+
 }
 
 /* .subs-word:hover::before{
@@ -186,12 +244,30 @@ h1{
     font-weight: 300;
 }
 .secondary-news-text p.title{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
 
 }
 .secondary-news-text p.read-btn{
     color: black;
+}
+@media(min-width:768px){
+    .secondary-news-container{
+        display: flex;
+        justify-content: space-between;
+        width: 40rem;
+    }
+    .secondary-news{
+        width: calc(50% - 1rem);
+        height: 25rem;
+    }
+    .main-news{
+        width: 100%;
+    }
+    .secondary-news-img img{
+        width: 100%;
+        height: 12rem;
+    }
 }
 
 /*todays picks*/
@@ -199,11 +275,26 @@ h1{
     display:grid;
     grid-template-columns: 100px 300px;
     margin-bottom: 20px;
+    margin-left: 20px;
     column-gap: 30px;
+}
+.todays-pick h2{
+
 }
 .pick-item img{
     width: 100px;
     height: 100px;
+}
+.pick-item p{
+    color: white;
+    font-weight: 700;
+    line-height: 1.5;
+    bottom: 120px;
+    left: 120px;
+
+}
+.pick-item p:hover{
+    text-decoration: underline;
 }
 .picks-text p{
     color: white;
@@ -213,3 +304,7 @@ h1{
 .picks-text p:hover{
     text-decoration: underline;
 }
+
+
+/*Desktop view*/
+
