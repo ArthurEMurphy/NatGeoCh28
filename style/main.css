@@ -107,17 +107,7 @@ p.read-btn{
     color: black;
     margin-right: 20px;
 }
-.sub-word{
-    border-bottom:2px solid var(--primary);
-    background-size: 100% 200%;
-    background-image:linear-gradient(to bottom, black 50%, var(--primary) 50%);
-    transition: background-position .1s ease-in-out, color .1s ease-in-out;
-}
-.sub-word:hover{
-    background-position: 0 100%;
-    color:black;
-    cursor:pointer;
-}
+
 
 @media(min-width:768px){
     .menu{
@@ -159,7 +149,6 @@ p.read-btn{
     }
 
 }
-
 /*header*/
 header{
     color: white;
@@ -167,24 +156,6 @@ header{
 }
 h1{
     text-transform: uppercase;
-    justify-content: center;
-}
-.border{
-    border-bottom:4px solid #ffcc00;
-    width: 30px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.header-ls{
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 45px;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-.header-p{
-    text-align: center;
 }
 .subs-word{
     border-bottom:2px solid var(--primary);
@@ -196,30 +167,6 @@ h1{
     background-position: 0 100%;
     color:black;
     cursor:pointer;
-}
-
-
-
-@media(min-width:768px){
-}
-/*header*/
-header{
-    color: white;
-    text-align: center;
-}
-h1{
-    text-transform: uppercase;
-}
-.subs-word{
-    border-bottom: 2px solid var(--primary);
-    background-size: 100% 200%;
-    background-image: linear-gradient(to bottom, black 50%, var(--primary) 50%);
-    transition: background-position .1s ease-in-out, color .1s ease-in-out;
-}
-.subs-word:hover{
-    background-position: 0 100%;
-    color: black;
-    cursor: pointer;
 }
 @media(min-width:768px){
 
@@ -305,23 +252,17 @@ h1{
     display:grid;
     grid-template-columns: 100px 300px;
     margin-bottom: 20px;
-    margin-left: 20px;
     column-gap: 30px;
 }
 .pick-item img{
     width: 100px;
     height: 100px;
 }
-.pick-item h3 span{
-    font-weight: 300;
-}
-.pick-item p{
+.picks-text p{
     color: white;
     font-weight: 700;
     line-height: 1.5;
 }
-.pick-item p:hover{
+.picks-text p:hover{
     text-decoration: underline;
 }
-
-
