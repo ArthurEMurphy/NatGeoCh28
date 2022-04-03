@@ -31,7 +31,7 @@ p.read-btn{
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
-    
+    letter-spacing: 5px;
 }
 .container{
     width: 90%;
@@ -56,7 +56,11 @@ p.read-btn{
     background-color: white;
 }
 .menu{
-
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: white;
 }
 .ng-logo,.link-search,.link-renew,.link-menu{
     display: none;
@@ -71,9 +75,18 @@ p.read-btn{
     font-size: 15px;
     color:black;
     font-weight: 700;
-    letter-spacing: 3px;
-    
+    letter-spacing: 3px;  
 }
+.link-subs{
+    background-color: black;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding: 1rem;
+}
+
 .link-subs{
     background-size: 200% 100%;
     background-position: 100% 0;
@@ -85,6 +98,10 @@ p.read-btn{
 .link-subs:hover{
     background-position: 0% 0;
     color:black;
+}
+.link-subs:hover{
+    color:black;
+    background-color: var(--primary);
 }
 .link-arrows i{
     color: black;
@@ -184,9 +201,29 @@ h1{
 
 
 @media(min-width:768px){
+}
+/*header*/
+header{
+    color: white;
+    text-align: center;
+}
+h1{
+    text-transform: uppercase;
+}
+.subs-word{
+    border-bottom: 2px solid var(--primary);
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, black 50%, var(--primary) 50%);
+    transition: background-position .1s ease-in-out, color .1s ease-in-out;
+}
+.subs-word:hover{
+    background-position: 0 100%;
+    color: black;
+    cursor: pointer;
+}
+@media(min-width:768px){
 
 }
-
 /* .subs-word:hover::before{
     content: "This is a fancy orange box.";
   background-color: #FFBA10;
@@ -195,8 +232,9 @@ h1{
 } */
 
 /*main-news*/
+
 .main-news{
-    position: relative; /*the parent should be relative*/
+    position: relative;/*the parent should be relative*/
     margin-bottom:  20px;
 }
 .main-news-img{
@@ -206,7 +244,7 @@ h1{
     height: 100%;
 }
 .main-news-text{
-    position: absolute; /*the child should be absolute*/
+    position:absolute; /*the child should be absolute*/
     top: 120px;
     left: 20px;
 }
@@ -225,16 +263,11 @@ h1{
 
 .secondary-news{
     margin-bottom: 20px;
-    
-}
-.secondary-news-img{
-
 }
 .secondary-news-text{
     background-color: white;
     padding: 10px;
     margin-top: -5px;
-
 }
 .secondary-news-text h3{
     color: gray;
@@ -244,13 +277,10 @@ h1{
     font-weight: 300;
 }
 .secondary-news-text p.title{
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 700;
+}
 
-}
-.secondary-news-text p.read-btn{
-    color: black;
-}
 @media(min-width:768px){
     .secondary-news-container{
         display: flex;
@@ -278,33 +308,20 @@ h1{
     margin-left: 20px;
     column-gap: 30px;
 }
-.todays-pick h2{
-
-}
 .pick-item img{
     width: 100px;
     height: 100px;
+}
+.pick-item h3 span{
+    font-weight: 300;
 }
 .pick-item p{
     color: white;
     font-weight: 700;
     line-height: 1.5;
-    bottom: 120px;
-    left: 120px;
-
 }
 .pick-item p:hover{
     text-decoration: underline;
 }
-.picks-text p{
-    color: white;
-    font-weight: 700;
-    line-height: 1.5px;
-}
-.picks-text p:hover{
-    text-decoration: underline;
-}
 
-
-/*Desktop view*/
 
